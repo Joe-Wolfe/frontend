@@ -3,7 +3,7 @@ import { decodeToken } from './helpers/DecodeToken';
 
 
 const api = axios.create({
-    baseURL: 'http://localhost:3001'
+    baseURL: process.env.REACT_APP_BASE_URL || 'http://localhost:3001'
 });
 
 async function getCompanies() {
