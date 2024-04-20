@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    background-color: wheat;
+    color: black;
+    border-radius: 20px;
+}
+
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home-body {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
