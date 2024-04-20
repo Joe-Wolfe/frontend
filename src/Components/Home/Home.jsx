@@ -4,7 +4,8 @@ import './Home.css'
 
 function Home(user) {
 
-    const username = user ? decodeToken().username : null
+    const token = localStorage.getItem('token')
+    const username = user && token ? decodeToken().username : null
 
     return (
         <div className='home'>
