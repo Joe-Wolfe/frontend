@@ -6,6 +6,8 @@ const api = axios.create({
     baseURL: process.env.REACT_APP_BASE_URL || 'http://localhost:3001'
 });
 
+console.log('API URL:', process.env.REACT_APP_BASE_URL);
+
 async function getCompanies() {
     const res = await api.get('/companies');
     return res.data.companies;
