@@ -3,10 +3,9 @@ import { decodeToken } from './helpers/DecodeToken';
 
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL || 'http://localhost:3001'
+    baseURL: "https://backend-for-jobly-app.onrender.com"
 });
 
-console.log('API URL:', process.env.REACT_APP_BASE_URL);
 
 async function getCompanies() {
     const res = await api.get('/companies');
